@@ -886,7 +886,7 @@
 
 				$(document).on('selectionchange',function(e){
 					console.log('selectionchange');
-					zss_editor.calculateEditorHeightWithCaretPosition();
+					//zss_editor.calculateEditorHeightWithCaretPosition();
 					zss_editor.setScrollPosition();
 					zss_editor.enabledEditingItems(e);
 					notifyIfSelectedTextHasChanged();
@@ -1256,7 +1256,7 @@
 				zss_editor.restorerange();
 				var sel = document.getSelection();
 				sel.deleteFromDocument();
-				document.execCommand('insertHTML',false,'<a href="'+encodeHtmlEntities(url)+'">'+encodeHtmlEntities(title)+'</a>');
+				document.execCommand('insertHTML',false,'<a href="'+encodeHtmlEntities(url)+'">'+encodeHtmlEntities(title)+'</a>&nbsp;');
 
 				zss_editor.enabledEditingItems();
 			}
