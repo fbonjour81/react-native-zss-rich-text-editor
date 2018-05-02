@@ -12,7 +12,6 @@
     "react-native-webview-bridge-updated": "git://github.com/fbonjour81/react-native-webview-bridge.git"
   },
   "peerDependencies": {
-    "react": "*",
-    "react-native": ">=0.31.0"
+    "react": "*"
   }
 }
